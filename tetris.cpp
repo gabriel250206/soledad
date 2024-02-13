@@ -42,7 +42,12 @@ public:
 		}
 	}
 
+    int getTamanio(){
+        return tamanio;
+    }
+
 };
+
 
 
 int main() {
@@ -50,7 +55,8 @@ int main() {
 	crear(tablero);
 	mostrar(tablero);
 	Figura tres{3,"l"};
-	
+	spawn(tablero,tres.espacio,tres.getTamanio);
+
 
 	return 0;
 }

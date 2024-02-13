@@ -30,3 +30,15 @@ void mostrar(vector<vector<int>>& tablero) {
 		cout << endl;
 	}
 }
+
+void spawn(vector<vector<int>>& tablero, vector<vector<int>>espacio, int x){
+    
+    if(x==3){
+        for (int i=1;i < x; i++){
+            for (int j=4;j<7;j++){
+                tablero[i][j]=espacio[i-1][j-7];
+            }
+        }
+    }
+    
+}
